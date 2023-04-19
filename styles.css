@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 :root {
-    --primary-clr: #0ea5e9;
-    --accent: #facc15;
+    --primary-clr: #1992d4;
+    --primary-hover-clr: #44a5da;
+    --accent: #f0b429;
     --white: #fff;
     --grey: #e9ecf0;
 }
@@ -95,6 +96,11 @@ body {
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover-clr);
 }
 
 .logo-container {
@@ -116,16 +122,25 @@ body {
 }
 
 .dashboard-sidebar>ul {
+    padding: 0;
     list-style: none;
     font-weight: bolder;
 }
 
 .sidebar-link {
+    cursor: pointer;
     padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    justify-items: center;
     gap: 15px;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-link .caption {
